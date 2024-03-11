@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import styles from "./globals.module.css";
+import "./globals.css";
 import Link from "next/link";
 import Header from "./src/components/header/index";
 
@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={styles.container}>
+      <body>
         <Header />
         {children}
       </body>

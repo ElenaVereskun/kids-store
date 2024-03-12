@@ -1,0 +1,47 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  align-items: center;
+}
+.imagePhoto {
+  overflow: hidden;
+  padding-top: 60px;
+}
+.title {
+  font-size: 31px;
+  text-align: center;
+}
+
+.image {
+  border-radius: 20px;
+  margin-right: 20px;
+}
+.info {
+  display: flex;
+  width: 450px;
+}
+.buttonInstagram {
+  border: none;
+  background-color: var(--color-brown-medium);
+}
+.insta {
+  display: flex;
+  background-color: var(--color-brown-medium);
+  justify-content: center;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.containerPhoto {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.containerText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+}

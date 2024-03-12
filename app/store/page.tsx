@@ -1,7 +1,16 @@
+import Link from "next/link";
+import styles from "./store.module.css";
+
 export default function Store() {
   return (
     <div>
-      <h2>Store</h2>
+      <div className={styles.topStore}>
+        <Link href="/vesna">Vesna</Link>
+        <Link href="#"></Link>
+        <Link href="#"></Link>
+        <Link href="#"></Link>
+        <Link href="#"></Link>
+      </div>
     </div>
   );
 }

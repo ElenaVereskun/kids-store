@@ -48,11 +48,14 @@ body {
   --color-red: #db4c4c;
 
   --color-brown: rgba(145, 128, 111, 1);
+  --color-brown-medium: #e6e3d8;
 
   --color-yellow-darker: #d3e35f;
 
   --spacing-medium: 16px;
   --spacing-large: 20px;
+
+  --font-helvetica: helvetica;
 
   --border-radius: 5px;
   --box-shadow: 0 16px 24px 2px rgba(33, 37, 41, 0.02),

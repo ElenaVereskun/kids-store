@@ -1,9 +1,9 @@
-/* import styles from "./page.module.css"; */
+import PhotoSwiper from "./src/components/photoSwiper/photoSwiper";
 
 export default function Home() {
   return (
     <main>
-      <h2>Main page</h2>
+      <PhotoSwiper />
     </main>
   );
 }

@@ -1,0 +1,72 @@
+.swiper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: var(--max-width);
+  margin: auto 0;
+}
+
+.swiperSlide {
+  min-height: 576px;
+}
+
+.container {
+  display: flex;
+  gap: 25px;
+  padding: 74px 77px;
+  width: 100%;
+
+  background-color: var(--color-white);
+  border-radius: 20px;
+}
+
+.slider_container {
+  max-width: 100%;
+}
+
+.slider_container :global .swiper-pagination-bullets {
+  display: flex;
+  justify-content: center;
+  column-gap: 11px;
+  margin: 44px 0 0 0;
+}
+
+.custom_swiper_pagination_bullet {
+  display: block;
+  width: 19px;
+  height: 19px;
+  border-radius: 50%;
+  background-color: var(--color-grey);
+  opacity: 1;
+  cursor: pointer;
+}
+
+.custom_swiper_pagination_bullet_active {
+  background-color: var(--color-yellow);
+}
+
+.custom_swiper_pagination_bullet:active {
+  background-color: var(--color-bullets-active);
+}
+
+.cardDescription {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 84px;
+  padding-top: 16px;
+  padding-bottom: 60px;
+  padding-right: 23px;
+
+  font-family: var(--font-mono);
+  font-size: var(--fs-18);
+  font-weight: var(--fw-400);
+  line-height: 22.59px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--color-black);
+}
+
+.descrWrapper {
+  padding: 4px 0;
+}

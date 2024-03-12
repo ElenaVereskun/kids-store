@@ -4,7 +4,7 @@
   padding: 60px 40px 60px 40px;
   display: flex;
   column-gap: 60px;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .links {
@@ -15,6 +15,8 @@
   color: var(--color-brown);
   text-decoration: none;
   text-transform: uppercase;
+  align-items: center;
+  display: flex;
 }
 .link:active {
   text-decoration: underline;

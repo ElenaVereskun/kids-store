@@ -1,0 +1,8 @@
+.topStore {
+  display: flex;
+  column-gap: 50px;
+  color: var(--color-brown);
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+}

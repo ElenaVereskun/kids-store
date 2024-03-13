@@ -9,7 +9,7 @@
 }
 .links {
   display: flex;
-  column-gap: 25px;
+  justify-content: space-between;
 }
 .link {
   color: var(--color-brown);

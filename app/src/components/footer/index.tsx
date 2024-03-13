@@ -14,9 +14,8 @@ export default function Footer() {
     <footer>
       <nav className={styles.container}>
         <div className={styles.links}>
-          <Image src={logo} alt="лого" width={50} height={50} />
-          <Link href="/" className={styles.link}>
-            Главная
+          <Link href="/">
+            <Image src={logo} alt="лого" width={50} height={50} />
           </Link>
           <Link href="store" className={styles.link}>
             Магазин
@@ -28,7 +27,10 @@ export default function Footer() {
             Lookbook
           </Link>
           <Link href="buy" className={styles.link}>
-            Покупателям
+            ОБМЕН И ВОЗВРАТ
+          </Link>
+          <Link href="buy" className={styles.link}>
+            ОПЛАТА И ДОСТАВКА
           </Link>
           <Link href="contacts" className={styles.link}>
             Контакты
@@ -43,8 +45,13 @@ export default function Footer() {
 
           <div className={styles.icons}>
             <Button type="small" variant="brownMedium" icon={InstagramLogo} />
-            <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
-            <Button type="small" variant="brownMedium" icon={TelegramIcon} />
+            <a href="https://wa.me/+79032001004">
+              <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
+            </a>
+            <a href="https://t.me/+79032001004">
+              <Button type="small" variant="brownMedium" icon={TelegramIcon} />
+            </a>
+
             <Button type="small" variant="brownMedium" icon={PinterestIcon} />
           </div>
           <div>

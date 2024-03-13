@@ -1,0 +1,53 @@
+.buttonSmall {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 26px;
+  width: 26px;
+  border: none;
+
+  border-radius: 50%;
+  color: var(--color-deep-black);
+
+  cursor: pointer;
+}
+
+.buttonBig {
+  padding: 10px 15px;
+  width: 280px;
+
+  text-align: center;
+  font-weight: var(--fw-500);
+  font-size: var(--fs-18);
+  line-height: var(--line-height-25);
+
+  border-radius: 20px;
+
+  cursor: pointer;
+}
+
+.icon {
+  max-width: 24px;
+  max-height: 24px;
+  stroke-width: 3;
+}
+
+.brownMedium:hover,
+.brownMedium:hover {
+  outline: 1px solid var(--color-black);
+  background-color: var(--color-brown-medium);
+}
+
+.brown {
+  background-color: var(--color-brown-medium);
+}
+
+.brown:active {
+  outline: none;
+  background-color: var(--color-orange);
+}
+
+.buttonDisabled {
+  background-color: var(--color-white);
+}

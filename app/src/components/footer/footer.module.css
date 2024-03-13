@@ -1,0 +1,39 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 40px 60px 40px;
+  display: flex;
+  column-gap: 60px;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+.links {
+  display: flex;
+  column-gap: 25px;
+}
+.link {
+  color: var(--color-brown);
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+}
+.link:active {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.linksFooter {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px 0px 60px 0px;
+}
+.icons {
+  display: flex;
+  column-gap: 20px;
+}
+.prava {
+  display: flex;
+  color: var(--color-brown);
+  justify-content: space-between;
+}

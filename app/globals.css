@@ -63,7 +63,7 @@ body {
 }
 body {
   background-color: whitesmoke;
-  color: var(--color-black-lighter);
+  color: var(--color-brown);
   font-family: var(--font-helvetica), "Bodoni MT", serif;
   margin: 0 auto;
   max-width: 1280px;

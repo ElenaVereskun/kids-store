@@ -1,7 +1,7 @@
 export default function Vesna() {
   return (
     <div>
-      <h2>Vesna</h2>
+      <h2>Весенняя коллекция</h2>
     </div>
   );
 }

@@ -2,7 +2,45 @@
   display: flex;
   column-gap: 50px;
   color: var(--color-brown);
-  text-transform: uppercase;
-  align-items: center;
+
   display: flex;
+  justify-content: center;
+}
+.topStore a {
+  color: var(--color-brown);
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.dropContainer {
+  display: flex;
+  position: relative;
+}
+.categories button {
+  border: none;
+  color: var(--color-brown);
+  font-size: 17px;
+  text-transform: uppercase;
+  background-color: whitesmoke;
+}
+.categories ol {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  padding-left: 0;
+  gap: 15px;
+}
+
+.categories a {
+  color: var(--color-brown);
+  text-decoration: none;
+}
+.cardList {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  width: 1200px;
+  justify-items: center;
+  margin-top: 20px;
+  row-gap: 30px;
 }

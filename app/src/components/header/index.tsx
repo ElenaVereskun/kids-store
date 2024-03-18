@@ -23,7 +23,10 @@ export default function Header() {
             О нас
           </Link>
         </div>
-        <Image src={logo} alt="лого" width={50} height={50} />
+        <Link href="/">
+          <Image src={logo} alt="лого" width={50} height={50} />
+        </Link>
+
         <div className={styles.links}>
           <Link href="lookbook" className={styles.link}>
             Lookbook

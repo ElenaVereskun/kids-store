@@ -17,6 +17,8 @@
   text-transform: uppercase;
   align-items: center;
   display: flex;
+  padding-bottom: 15px;
+  margin: 0;
 }
 .link:active {
   text-decoration: underline;
@@ -27,6 +29,7 @@
   display: flex;
   justify-content: space-between;
   padding: 60px 0px 60px 0px;
+  align-items: flex-start;
 }
 .icons {
   display: flex;

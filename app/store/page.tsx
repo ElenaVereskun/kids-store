@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./store.module.css";
 import React from "react";
-import CardPhoto from "../src/images/cardPhoto.jpg";
+import CardPhoto from "../../public/images/cardPhoto.jpg";
 
 type ICard = {
   photo: string;
@@ -23,12 +23,12 @@ export default function Store() {
   };
 
   const items: ICard = {
-    photo: "/../src/images/cardPhoto.jpg",
+    photo: "/../../public/images/cardPhoto.jpg",
     title: "Название",
     price: 100500,
   };
   return (
-    <div>
+    <section className={styles.section}>
       <div className={styles.topStore}>
         <Link href="/store/vesna">Vesna</Link>
         <div className={styles.categories}>
@@ -110,6 +110,6 @@ export default function Store() {
           <p>{items.price} руб</p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

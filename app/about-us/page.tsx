@@ -2,10 +2,10 @@ import Image from "next/image";
 
 import styles from "./page.module.css";
 
-import AboutUsPhoto from "../src/images/AboutUsFhoto1.jpg";
-import AboutUsPhoto2 from "../src/images/AboutUsFhoto2.jpg";
-import AboutUsPhoto3 from "../src/images/AboutUsFhoto3.jpg";
-import InstagramLogo from "../src/images/instagram.svg";
+import AboutUsPhoto from "../../public/images/AboutUsFhoto1.jpg";
+import AboutUsPhoto2 from "../../public/images/AboutUsFhoto2.jpg";
+import AboutUsPhoto3 from "../../public/images/AboutUsFhoto3.jpg";
+import InstagramLogo from "../../public/images/instagram.svg";
 
 export default function AboutUs() {
   return (

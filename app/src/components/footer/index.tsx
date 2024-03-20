@@ -1,10 +1,10 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../images/logo.svg";
-import InstagramLogo from "../../images/instagram.svg";
-import WhatsAppIcon from "../../images/whats-appIcon.svg";
-import TelegramIcon from "../../images/telegramIcon.svg";
-import PinterestIcon from "../../images/pinterestIcon.svg";
+import logo from "../../../../public/images/logo.svg";
+import InstagramLogo from "../../../../public/images/instagram.svg";
+import WhatsAppIcon from "../../../../public/images/whats-appIcon.svg";
+import TelegramIcon from "../../../../public/images/telegramIcon.svg";
+import PinterestIcon from "../../../../public/images/pinterestIcon.svg";
 import Button from "../../ui/Button";
 
 import styles from "./footer.module.css";
@@ -64,7 +64,7 @@ export default function Footer() {
           </div>
         </div>
         <div className={styles.prava}>
-          <span>© 2024 СHILDOM</span>
+          <span>© 2024 Mikiniki</span>
           <span>ВСЕ ПРАВА ЗАЩИЩЕНЫ</span>
           <span> • ИП НАШИРВАНОВ Н.Ф</span>
           <span> • ОГРНИП 321169000146781</span>

@@ -44,13 +44,15 @@ export default function Footer() {
           </div>
 
           <div className={styles.icons}>
-            <Button type="small" variant="brownMedium" icon={InstagramLogo} />
-            <a href="https://wa.me/+79032001004">
+            <Link href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg==">
+              <Button type="small" variant="brownMedium" icon={InstagramLogo} />
+            </Link>
+            <Link href="https://wa.me/+79032001004">
               <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
-            </a>
-            <a href="https://t.me/+79032001004">
+            </Link>
+            <Link href="https://t.me/+79032001004">
               <Button type="small" variant="brownMedium" icon={TelegramIcon} />
-            </a>
+            </Link>
 
             <Button type="small" variant="brownMedium" icon={PinterestIcon} />
           </div>

@@ -1,10 +1,10 @@
 import Image from "next/image";
 
-import AboutUsPhoto from "../src/images/AboutUsFhoto3.jpg";
-import InstagramLogo from "../src/images/instagram.svg";
-import WhatsAppIcon from "../src/images/whats-appIcon.svg";
-import TelegramIcon from "../src/images/telegramIcon.svg";
-import PinterestIcon from "../src/images/pinterestIcon.svg";
+import AboutUsPhoto from "../../public/images/AboutUsFhoto2.jpg";
+import InstagramLogo from "../../public/images/instagram.svg";
+import WhatsAppIcon from "../../public/images/whats-appIcon.svg";
+import TelegramIcon from "../../public/images/telegramIcon.svg";
+import PinterestIcon from "../../public/images/pinterestIcon.svg";
 import Button from "../src/ui/Button/index";
 
 import styles from "./contacts.module.css";
@@ -34,7 +34,7 @@ export default function Contacts() {
         <div>
           <h2>Мы в социальных сетях</h2>
           <div className={styles.icons}>
-            <a href="#">
+            <a href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg==">
               <Button type="small" variant="brownMedium" icon={InstagramLogo} />
             </a>
             <a href="https://wa.me/+79032001004">

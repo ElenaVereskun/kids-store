@@ -2,36 +2,43 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
+import { useUnit } from "effector-react";
+
 import logo from "../../../../public/images/logo.svg";
 import search from "../../../../public/images/search.svg";
 import basket from "../../../../public/images/baske.svg";
+
+import { $searchModal, openSearchModal } from "../../../context/modals";
+import {
+  addOverflowHiddenFromBody,
+  handleCloseSearchModal,
+} from "../../../lib/utils/commons";
+
 import styles from "./header.module.css";
-import { useLang } from "../../../hooks/useLang";
 
 export default function Header() {
-  const [isSearchOpen, setIsSearchOpen] = React.useState(false);
+  const searchModal = useUnit($searchModal);
 
-  const popupSearchOpen = () => {
-    setIsSearchOpen(true);
+  const handleOpenSearchModal = () => {
+    openSearchModal();
+    addOverflowHiddenFromBody;
   };
-
-  const closeDrop = () => {
-    setIsSearchOpen(false);
-  };
-
-  const { lang, translations } = useLang();
-
+  console.log(searchModal);
   return (
     <header>
+      <div
+        className={
+          searchModal ? styles.searchOverlayActive : styles.searchOverlayNone
+        }
+        onClick={handleCloseSearchModal}
+      ></div>
       <nav className={styles.container}>
         <div className={styles.links}>
-          <button className={styles.buttonSearch} onClick={popupSearchOpen}>
+          <button
+            className={styles.buttonSearch}
+            onClick={handleOpenSearchModal}
+          >
             <Image src={search} alt="поиск" width={25} height={25} />
-            {isSearchOpen && (
-              <div className={styles.popup}>
-                <input placeholder="поиск товара"></input>
-              </div>
-            )}
           </button>
           <Link href="/" className={styles.link}>
             Главная
@@ -61,7 +68,6 @@ export default function Header() {
             <Image src={basket} alt="поиск" width={25} height={25} />
           </button>
         </div>
-        <button>{translations[lang].header.menu}</button>
       </nav>
     </header>
   );

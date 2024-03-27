@@ -30,43 +30,35 @@ export default function Store() {
   return (
     <section className={styles.section}>
       <div className={styles.topStore}>
-        <Link href="/store/vesna">Vesna</Link>
         <div className={styles.categories}>
           <button onClick={toggleDrop}>Категории товаров</button>
           {isOpenDrop && (
             <div className={styles.dropContainer}>
               <ol>
                 <li>
-                  <Link href="/vest">Тельняшки</Link>
+                  <Link href="/cloth">Одежда</Link>
                 </li>
                 <li>
-                  <Link href="/up">Верх</Link>
+                  <Link href="/outerwear">Верхняя одежда</Link>
                 </li>
                 <li>
-                  <Link href="/store/for-girls">Наряды для девочек</Link>
+                  <Link href="/plaid">Конверты пледы</Link>
                 </li>
                 <li>
-                  <Link href="/dresses">Платья</Link>
+                  <Link href="/towels">Пеленки полотенца</Link>
                 </li>
                 <li>
-                  <Link href="/for-boys">Для мальчиков</Link>
+                  <Link href="/accessories">Аксессуары</Link>
                 </li>
                 <li>
-                  <Link href="/costumes">Костюмы</Link>
-                </li>
-                <li>
-                  <Link href="/for-newborn">Для новорожденных</Link>
-                </li>
-                <li>
-                  <Link href="/for-mums">Для мам</Link>
+                  <Link href="/toys">Игрушки</Link>
                 </li>
               </ol>
             </div>
           )}
         </div>
-        <Link href="#">Все товары</Link>
         <Link href="#">Аксессуары</Link>
-        <Link href="#">Предзаказ</Link>
+        <Link href="#">Игрушки</Link>
       </div>
       <div className={styles.cardList}>
         <div className={styles.card}>

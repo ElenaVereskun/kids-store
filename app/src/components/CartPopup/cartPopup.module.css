@@ -1,0 +1,25 @@
+.cart a {
+  display: flex;
+  position: relative;
+}
+.container {
+  position: fixed;
+  right: 60px;
+  background-color: var(--color-brown-lighter);
+  padding: 20px 40px 40px 40px;
+  gap: 20px;
+  border-radius: 20px;
+}
+.cartTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cartButtonClose {
+  background-color: var(--color-brown-lighter);
+  border: none;
+}
+.cartFooter a {
+  text-decoration: none;
+  color: var(--color-brown);
+}

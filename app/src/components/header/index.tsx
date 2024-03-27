@@ -2,36 +2,24 @@
 import Link from "next/link";
 import Image from "next/image";
 import React from "react";
-import { useUnit } from "effector-react";
 
 import logo from "../../../../public/images/logo.svg";
 import search from "../../../../public/images/search.svg";
-import basket from "../../../../public/images/baske.svg";
 
-import { $searchModal, openSearchModal } from "../../../context/modals";
-import {
-  addOverflowHiddenFromBody,
-  handleCloseSearchModal,
-} from "../../../lib/utils/commons";
+import { openSearchModal } from "../../../context/modals";
+import { addOverflowHiddenFromBody } from "../../../lib/utils/commons";
 
 import styles from "./header.module.css";
+import CartPopup from "../CartPopup/CartPopup";
 
 export default function Header() {
-  const searchModal = useUnit($searchModal);
-
   const handleOpenSearchModal = () => {
     openSearchModal();
     addOverflowHiddenFromBody;
   };
-  console.log(searchModal);
+
   return (
     <header>
-      <div
-        className={
-          searchModal ? styles.searchOverlayActive : styles.searchOverlayNone
-        }
-        onClick={handleCloseSearchModal}
-      ></div>
       <nav className={styles.container}>
         <div className={styles.links}>
           <button
@@ -64,9 +52,12 @@ export default function Header() {
           <Link href="contacts" className={styles.link}>
             Контакты
           </Link>
-          <button className={styles.buttonSearch}>
-            <Image src={basket} alt="поиск" width={25} height={25} />
-          </button>
+          {/*  <Link href="cart" className={styles.link}>
+            <button className={styles.buttonSearch}>
+              <Image src={basket} alt="поиск" width={25} height={25} />
+            </button>
+          </Link> */}
+          <CartPopup />
         </div>
       </nav>
     </header>

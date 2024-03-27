@@ -16,14 +16,14 @@
 .buttonBig {
   padding: 10px 15px;
   width: 280px;
-
+  justify-content: center;
   text-align: center;
   font-weight: var(--fw-500);
   font-size: var(--fs-18);
   line-height: var(--line-height-25);
 
   border-radius: 20px;
-
+  border: none;
   cursor: pointer;
 }
 

@@ -2,19 +2,19 @@ import Image from "next/image";
 
 import styles from "./page.module.css";
 
-import AboutUsPhoto from "../../public/images/AboutUsFhoto1.jpg";
-import AboutUsPhoto2 from "../../public/images/AboutUsFhoto2.jpg";
-import AboutUsPhoto3 from "../../public/images/AboutUsFhoto3.jpg";
+import AboutUsPhoto from "../../public/images/fhoto.jpg";
+import AboutUsPhoto2 from "../../public/images/photo2.jpeg";
+import AboutUsPhoto3 from "../../public/images/photo3.jpeg";
+import AboutUsPhoto4 from "../../public/images/photo4.jpeg";
 import InstagramLogo from "../../public/images/instagram.svg";
+import Link from "next/link";
+import Button from "../src/ui/Button";
 
 export default function AboutUs() {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>О НАC</h2>
-      <span>
-        "ChildOm" - пространство уникальной детской одежды с нотками эстетики и
-        романтизма, а также с заботой о малыше.{" "}
-      </span>
+      <span>"ChildOm" - детская одежда с заботой о малыше</span>
       <div className={styles.imagePhoto}>
         <Image
           src={AboutUsPhoto}
@@ -25,66 +25,38 @@ export default function AboutUs() {
           style={{ float: "left" }}
         />
         <span className={styles.info}>
-          Мама и папа - самые близкие для ребенка люди. Малыш чувствует их
-          тепло, ласку, поддержку, заботу и видит в них олицетворение добра и
-          света. Философия нашего бренда о невидимой связи таких родных людей.
-          Каждый из нас - это пример для своего чада. Они видят как мы радуемся,
-          переживаем, помогаем, искренне любим и пытаются быть похожими. Наша
-          одежда для ребенка - это один маленький и одновременно очень важный
-          для ребенка шаг быть, как мама и папа, почувствовать себя взрослым и
-          важным человеком в этом мире.
+          Мы — творческий и вдохновляющий магазин детской одежды, где каждая
+          деталь создана с любовью и заботой. Магазин детской одежды — это не
+          только место покупок, но и источник вдохновения и радости для детей и
+          их родителей.
         </span>
-        <div style={{ paddingTop: "60px" }}>
-          <Image
-            src={AboutUsPhoto}
-            className={styles.image}
-            alt="фото о нас"
-            height={360}
-            width={280}
-          />
-          <Image
-            src={AboutUsPhoto}
-            className={styles.image}
-            alt="фото о нас"
-            height={360}
-            width={280}
-          />
-          <p style={{ display: "flex", width: "750px" }}>
-            Мы вдохновляем Ваших детей. А парные образы связывают маму и ребенка
-            невидимой нитью. Я как мама и папа...
-          </p>
-        </div>
+        <br />
+        <span>
+          Мы уделяем особое внимание качеству нашей продукции. Все наши товары
+          изготовлены из натуральных материалов, чтобы обеспечить комфорт и
+          безопасность каждого ребенка.
+        </span>
       </div>
 
-      <div>
-        <p>
-          CHILDOM УДЕЛЯЕТ ОСОБОЕ ВНИМАНИЕ НАТУРАЛЬНЫМ СОСТАВАМ И КРАСИВОЙ
-          УПАКОВКЕ.
-        </p>
-        <Image src={AboutUsPhoto3} alt="фото о нас" height={780} width={805} />
-      </div>
       <div className={styles.insta}>
         <div className={styles.containerText}>
           <h3>ПОДПИСЫВАЙСЯ НА НАС</h3>
           <h2>INSTAGRAM</h2>
-          <button className={styles.buttonInstagram}>
-            <Image
-              src={InstagramLogo}
-              alt="фото о нас"
-              height={40}
-              width={40}
-            />
-          </button>
-          <p style={{ fontSize: "16px", width: "445px" }}>
-            Здесь про вдохновение, про красивое детство, которое проживают с
-            нами наши покупатели. Днк бренда передается в каждом кадре и мы
-            безусловно этому рады. Наши изделия -это про любовь и заботу!
-          </p>
+          <Link href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg==">
+            <Button type="small" variant="brownMedium" icon={InstagramLogo} />
+          </Link>
         </div>
 
         <div className={styles.containerPhoto}>
           <Image
-            src={AboutUsPhoto2}
+            src={AboutUsPhoto}
+            className={styles.image}
+            alt="фото о нас"
+            height={300}
+            width={300}
+          />
+          <Image
+            src={AboutUsPhoto4}
             className={styles.image}
             alt="фото о нас"
             height={300}
@@ -98,14 +70,7 @@ export default function AboutUs() {
             width={300}
           />
           <Image
-            src={AboutUsPhoto2}
-            className={styles.image}
-            alt="фото о нас"
-            height={300}
-            width={300}
-          />
-          <Image
-            src={AboutUsPhoto2}
+            src={AboutUsPhoto3}
             className={styles.image}
             alt="фото о нас"
             height={300}

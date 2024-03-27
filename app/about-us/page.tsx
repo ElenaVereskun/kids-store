@@ -42,7 +42,10 @@ export default function AboutUs() {
         <div className={styles.containerText}>
           <h3>ПОДПИСЫВАЙСЯ НА НАС</h3>
           <h2>INSTAGRAM</h2>
-          <Link href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg==">
+          <Link
+            href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
+            target="_blank"
+          >
             <Button type="small" variant="brownMedium" icon={InstagramLogo} />
           </Link>
         </div>

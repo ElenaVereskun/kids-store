@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import AboutUsPhoto from "../../public/images/AboutUsFhoto2.jpg";
+import AboutUsPhoto from "../../public/images/photo3.jpeg";
 import InstagramLogo from "../../public/images/instagram.svg";
 import WhatsAppIcon from "../../public/images/whats-appIcon.svg";
 import TelegramIcon from "../../public/images/telegramIcon.svg";
@@ -22,11 +22,19 @@ export default function Contacts() {
               почту
             </span>
             <br></br>
-            <a href="https://wa.me/+79032001004" className={styles.link}>
+            <a
+              href="https://wa.me/+79032001004"
+              className={styles.link}
+              target="_blank"
+            >
               +7(903) 200-10-04
             </a>
             <br></br>
-            <a href="mailto:lena.vereskun@yandex.ru" className={styles.link}>
+            <a
+              href="mailto:lena.vereskun@yandex.ru"
+              className={styles.link}
+              target="_blank"
+            >
               lena.vereskun@yandex.ru
             </a>
           </div>
@@ -34,13 +42,16 @@ export default function Contacts() {
         <div>
           <h2>Мы в социальных сетях</h2>
           <div className={styles.icons}>
-            <a href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg==">
+            <a
+              href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
+              target="_blank"
+            >
               <Button type="small" variant="brownMedium" icon={InstagramLogo} />
             </a>
-            <a href="https://wa.me/+79032001004">
+            <a href="https://wa.me/+79032001004" target="_blank">
               <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
             </a>
-            <a href="https://t.me/+79032001004">
+            <a href="https://t.me/+79032001004" target="_blank">
               <Button type="small" variant="brownMedium" icon={TelegramIcon} />
             </a>
             <a href="#">

@@ -52,11 +52,6 @@ export default function Header() {
           <Link href="contacts" className={styles.link}>
             Контакты
           </Link>
-          {/*  <Link href="cart" className={styles.link}>
-            <button className={styles.buttonSearch}>
-              <Image src={basket} alt="поиск" width={25} height={25} />
-            </button>
-          </Link> */}
           <CartPopup />
         </div>
       </nav>

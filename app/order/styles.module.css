@@ -1,0 +1,28 @@
+.tabContainer {
+  width: 1280px;
+}
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.title li {
+  list-style: none;
+}
+.orders {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 0px;
+  border-bottom: 1px solid;
+  padding-bottom: 10px;
+}
+.orders li {
+  list-style: none;
+}
+.orderSum {
+  display: flex;
+  justify-content: space-between;
+}

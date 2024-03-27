@@ -4,12 +4,7 @@ import Image from "next/image";
 import styles from "./store.module.css";
 import React from "react";
 import CardPhoto from "../../public/images/cardPhoto.jpg";
-
-type ICard = {
-  photo: string;
-  title: string;
-  price: number;
-};
+import ICard from "../types/ICard";
 
 export default function Store() {
   const [isOpenDrop, setIsOpenDrop] = React.useState(false);
@@ -23,7 +18,7 @@ export default function Store() {
   };
 
   const items: ICard = {
-    photo: "/../../public/images/cardPhoto.jpg",
+    photo: CardPhoto,
     title: "Название",
     price: 100500,
   };

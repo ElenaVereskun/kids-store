@@ -1,14 +1,22 @@
+"use client";
 import React from "react";
-import "swiper/css";
-import { Pagination } from "swiper/modules";
-import Image from "next/image";
-import styles from "./photoSwiper.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import Image from "next/image";
+import { Pagination } from "swiper/modules";
+
+import photo1 from "../../../../public/images/fhoto.jpg";
+import photo2 from "../../../../public/images/photo2.jpeg";
+import photo3 from "../../../../public/images/photo3.jpeg";
+import photo4 from "../../../../public/images/photo4.jpeg";
+
+import styles from "./photoSwiper.module.css";
 
 export default function PhotoSwiper() {
   const parametr = {
     slidesPerView: 1,
     slidesPerGroup: 1,
+    createElements: true,
     speed: 1000,
     loop: false,
     modules: [Pagination],
@@ -32,19 +40,19 @@ export default function PhotoSwiper() {
   const simpleData = [
     {
       id: 1,
-      imagePhoto: "app/src/images/fhoto.jpg",
+      imagePhoto: photo1,
     },
     {
       id: 2,
-      imagePhoto: "app/src/images/fhoto.jpg",
+      imagePhoto: photo2,
     },
     {
       id: 3,
-      imagePhoto: "app/src/images/fhoto.jpg",
+      imagePhoto: photo3,
     },
     {
       id: 4,
-      imagePhoto: "app/src/images/fhoto.jpg",
+      imagePhoto: photo4,
     },
   ];
 
@@ -55,6 +63,8 @@ export default function PhotoSwiper() {
           simpleData.map((item) => (
             <SwiperSlide key={item.id} className={styles.swiperSlide}>
               <Image src={item.imagePhoto} alt="фото" />
+
+              <div className="swiper-pagination"></div>
             </SwiperSlide>
           ))}
       </Swiper>

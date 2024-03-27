@@ -17,60 +17,55 @@ export default function Footer() {
           <Link href="/">
             <Image src={logo} alt="лого" width={50} height={50} />
           </Link>
-          <Link href="store" className={styles.link}>
-            Магазин
-          </Link>
-          <Link href="about-us" className={styles.link}>
-            О нас
-          </Link>
-          <Link href="lookbook" className={styles.link}>
-            Lookbook
-          </Link>
-          <Link href="buy" className={styles.link}>
-            ОБМЕН И ВОЗВРАТ
-          </Link>
-          <Link href="buy" className={styles.link}>
-            ОПЛАТА И ДОСТАВКА
-          </Link>
-          <Link href="contacts" className={styles.link}>
-            Контакты
-          </Link>
+          <Link href="store">Магазин</Link>
+          <Link href="about-us">О нас</Link>
+          <Link href="lookbook">Lookbook</Link>
+          <Link href="buy">ОБМЕН И ВОЗВРАТ</Link>
+          <Link href="buy">ОПЛАТА И ДОСТАВКА</Link>
+          <Link href="contacts">Контакты</Link>
         </div>
 
         <div className={styles.linksFooter}>
           <div>
-            <p className={styles.link}>+79274539717</p>
-            <p className={styles.link}>CHILDOM.OFFICIAL@YANDEX.RU</p>
+            <p>+79274539717</p>
+            <p>CHILDOM.OFFICIAL@YANDEX.RU</p>
           </div>
 
           <div className={styles.icons}>
-            <Link href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg==">
+            <Link
+              href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
+              target="_blank"
+            >
               <Button type="small" variant="brownMedium" icon={InstagramLogo} />
             </Link>
-            <Link href="https://wa.me/+79032001004">
+            <Link href="https://wa.me/+79032001004" target="_blank">
               <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
             </Link>
-            <Link href="https://t.me/+79032001004">
+            <Link href="https://t.me/+79032001004" target="_blank">
               <Button type="small" variant="brownMedium" icon={TelegramIcon} />
             </Link>
 
             <Button type="small" variant="brownMedium" icon={PinterestIcon} />
           </div>
-          <div>
-            <Link href="public-offer" className={styles.link}>
-              ПУБЛИЧНАЯ ОФЕРТА
-            </Link>
-            <Link href="privacy-policy" className={styles.link}>
-              ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
-            </Link>
+          <div className={styles.offer}>
+            <Link href="public-offer">ПУБЛИЧНАЯ ОФЕРТА</Link>
+            <br />
+            <Link href="privacy-policy">ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</Link>
           </div>
         </div>
         <div className={styles.prava}>
           <span>© 2024 Mikiniki</span>
           <span>ВСЕ ПРАВА ЗАЩИЩЕНЫ</span>
-          <span> • ИП НАШИРВАНОВ Н.Ф</span>
+          <span> • ИП Татаринцева Л.А.</span>
           <span> • ОГРНИП 321169000146781</span>
           <span> • ИНН 164001490980</span>
+        </div>
+        <div className={styles.dev}>
+          <Link href="https://t.me/+79299715582" target="_blank">
+            Сайт сделан
+            <Button type="small" variant="brownMedium" icon={TelegramIcon} />
+            Верескун Е.И.
+          </Link>
         </div>
       </nav>
     </footer>

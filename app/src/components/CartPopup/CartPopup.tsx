@@ -18,7 +18,7 @@ const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
 
     return (
       <div className={styles.cart} ref={ref}>
-        <Link href="/cart" onMouseEnter={handleShowPopup}>
+        <Link href="/order" onMouseEnter={handleShowPopup}>
           <Image src={basket} alt="поиск" width={25} height={25} />
         </Link>
         <AnimatePresence>

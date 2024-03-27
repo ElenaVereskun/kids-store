@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
 }
-.link {
+.links a {
   color: var(--color-brown);
   text-decoration: none;
   text-transform: uppercase;
@@ -20,10 +20,19 @@
   padding-bottom: 15px;
   margin: 0;
 }
-.link:active {
+a:active {
   text-decoration: underline;
   cursor: pointer;
   opacity: 0.8;
+}
+.offer a {
+  color: var(--color-brown);
+  text-decoration: none;
+  text-transform: uppercase;
+  align-items: center;
+  display: flex;
+  padding-bottom: 15px;
+  margin: 0;
 }
 .linksFooter {
   display: flex;
@@ -39,4 +48,13 @@
   display: flex;
   color: var(--color-brown);
   justify-content: space-between;
+}
+.dev {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.dev a {
+  color: var(--color-brown);
+  text-decoration: none;
 }

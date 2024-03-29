@@ -8,7 +8,7 @@
   border: none;
 
   border-radius: 50%;
-  color: var(--color-deep-black);
+  color: white;
 
   cursor: pointer;
 }
@@ -21,7 +21,7 @@
   font-weight: var(--fw-500);
   font-size: var(--fs-18);
   line-height: var(--line-height-25);
-
+  color: white;
   border-radius: 20px;
   border: none;
   cursor: pointer;
@@ -36,15 +36,16 @@
 .brownMedium:hover,
 .brownMedium:hover {
   outline: 1px solid var(--color-black);
-  background-color: var(--color-brown-medium);
+  background-color: var(--color-brown-wine);
 }
 
 .brown {
-  background-color: var(--color-brown-medium);
+  background-color: var(--color-brown-wine);
 }
 
 .brown:active {
   outline: none;
+  opacity: 0.8;
   background-color: var(--color-orange);
 }
 

@@ -6,11 +6,26 @@
   --color-black-lighter: #2f2f2f;
 
   --color-red-lighter: #efd8ca;
+  --color-red-light: #e8a87c;
+  --color-red: #e27d60;
+
+  /*  
+  --color-red-lighter: #efd8ca;
   --color-red-light: #e9c7b1;
   --color-red: #db4c4c;
-
   --color-brown: rgba(145, 128, 111, 1);
   --color-brown-medium: #e6e3d8;
+  --color-brown-lighter: #f0ece0; */
+
+  --color-gray: #485358;
+  --color-brown: #85673c;
+  --color-green-gray: #5b7168;
+  --color-brown-wine: #552f21;
+  --color-brown-lighter: #9b937c;
+  --color-blue: #a9c1d2;
+  --color-gray-lighter: #c4cfd0;
+
+  --color-brown-medium: #a4827c;
   --color-brown-lighter: #f0ece0;
 
   --color-yellow-darker: #fcf190;

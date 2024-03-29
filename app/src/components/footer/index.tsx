@@ -27,8 +27,8 @@ export default function Footer() {
 
         <div className={styles.linksFooter}>
           <div>
-            <p>+79274539717</p>
-            <p>CHILDOM.OFFICIAL@YANDEX.RU</p>
+            <p style={{ marginTop: "0" }}>+79274539717</p>
+            <p>TT@YANDEX.RU</p>
           </div>
 
           <div className={styles.icons}>

@@ -1,4 +1,4 @@
-import ContainerAdmin from "../src/components/Admin/ContainerAdmin";
+/* import ContainerAdmin from "../src/components/Admin/ContainerAdmin"; */
 /* import { logout } from '@/redux/features/admin/authSlice'; */
 import { useDispatch } from "react-redux";
 /* import { AppDispatch, useAppSelector } from "../../../redux/store"; */
@@ -16,7 +16,7 @@ export default function Admin() {
       >
         Выйти
       </button>
-      <ContainerAdmin children={undefined} />
+      {/* <ContainerAdmin children={undefined} /> */}
     </div>
   );
 }

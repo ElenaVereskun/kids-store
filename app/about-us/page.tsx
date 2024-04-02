@@ -14,7 +14,7 @@ export default function AboutUs() {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>О НАC</h2>
-      <span>"ChildOm" - детская одежда с заботой о малыше</span>
+      <span>&quot;Mikiniki&quot; - детская одежда с заботой о малыше</span>
       <div className={styles.imagePhoto}>
         <Image
           src={AboutUsPhoto}

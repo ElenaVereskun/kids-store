@@ -25,8 +25,8 @@ export default function Contacts() {
             <h2>Наши контакты</h2>
             <div className={styles.contacts}>
               <span>
-                Для самой быстрой связи вы можете написать нам в Whats'App или
-                на почту
+                Для самой быстрой связи вы можете написать нам в Whats&lsquo;App
+                или на почту
               </span>
               <br></br>
               <a

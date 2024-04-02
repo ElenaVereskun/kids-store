@@ -36,13 +36,13 @@
   width: 19px;
   height: 19px;
   border-radius: 50%;
-  background-color: var(--color-gray);
+  background-color: var(--color-blue);
   opacity: 1;
   cursor: pointer;
 }
 
 .custom_swiper_pagination_bullet_active {
-  background-color: var(--color-yellow);
+  background-color: var(--color-brown-wine);
 }
 
 .custom_swiper_pagination_bullet:active {

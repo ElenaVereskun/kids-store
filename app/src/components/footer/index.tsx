@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import logo from "../../../../public/images/logo.svg";
+import logo from "../../../../public/images/logo.png";
 import InstagramLogo from "../../../../public/images/instagram.svg";
 import WhatsAppIcon from "../../../../public/images/whats-appIcon.svg";
 import TelegramIcon from "../../../../public/images/telegramIcon.svg";
@@ -15,7 +15,7 @@ export default function Footer() {
       <nav className={styles.container}>
         <div className={styles.links}>
           <Link href="/">
-            <Image src={logo} alt="лого" width={50} height={50} />
+            <Image src={logo} alt="лого" width={100} height={100} />
           </Link>
           <Link href="store">Магазин</Link>
           <Link href="about-us">О нас</Link>
@@ -26,9 +26,22 @@ export default function Footer() {
         </div>
 
         <div className={styles.linksFooter}>
-          <div>
-            <p style={{ marginTop: "0" }}>+79274539717</p>
-            <p>TT@YANDEX.RU</p>
+          <div className={styles.offer}>
+            <a
+              href="https://wa.me/+79032001004"
+              className={styles.link}
+              target="_blank"
+            >
+              +7(903) 200-10-04
+            </a>
+            <br></br>
+            <a
+              href="mailto:lena.vereskun@yandex.ru"
+              className={styles.link}
+              target="_blank"
+            >
+              ttttttttt@yandex.ru
+            </a>
           </div>
 
           <div className={styles.icons}>
@@ -62,9 +75,13 @@ export default function Footer() {
         </div>
         <div className={styles.dev}>
           <Link href="https://t.me/+79299715582" target="_blank">
-            Сайт сделан
-            <Button type="small" variant="brownMedium" icon={TelegramIcon} />
-            Верескун Е.И.
+            Сайт сделан Верескун Е.{" "}
+            <Image
+              src={TelegramIcon}
+              alt="заказать сайт"
+              width={15}
+              height={15}
+            />
           </Link>
         </div>
       </nav>

@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import React from "react";
 
-import logo from "../../../../public/images/logo.svg";
+import logo from "../../../../public/images/logo.png";
 import search from "../../../../public/images/search.svg";
 
 import { openSearchModal } from "../../../context/modals";
@@ -39,7 +39,7 @@ export default function Header() {
           </Link>
         </div>
         <Link href="/">
-          <Image src={logo} alt="лого" width={50} height={50} />
+          <Image src={logo} alt="лого" width={150} height={150} />
         </Link>
 
         <div className={styles.links}>

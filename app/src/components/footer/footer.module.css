@@ -20,7 +20,7 @@
   padding-bottom: 15px;
   margin: 0;
 }
-a:active {
+.links a:active {
   text-decoration: underline;
   cursor: pointer;
   opacity: 0.8;
@@ -31,16 +31,15 @@ a:active {
   text-transform: uppercase;
   align-items: center;
   display: flex;
-  padding-bottom: 15px;
   margin: 0;
-  font-size: 14px;
+  font-size: 12px;
 }
 .linksFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px 20px 0px;
-  align-items: flex-start;
+  padding: 10px 0px 30px 0px;
+  align-items: center;
   column-gap: 20px;
 }
 .icons {
@@ -56,7 +55,7 @@ a:active {
 }
 .dev {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   margin-top: 20px;
 }
 .dev a {

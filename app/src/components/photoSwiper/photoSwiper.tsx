@@ -62,7 +62,12 @@ export default function PhotoSwiper() {
         {simpleData &&
           simpleData.map((item) => (
             <SwiperSlide key={item.id} className={styles.swiperSlide}>
-              <Image src={item.imagePhoto} alt="фото" />
+              <Image
+                src={item.imagePhoto}
+                alt="фото"
+                width={600}
+                height={700}
+              />
 
               <div className="swiper-pagination"></div>
             </SwiperSlide>

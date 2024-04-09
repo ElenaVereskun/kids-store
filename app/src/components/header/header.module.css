@@ -33,3 +33,6 @@
   border: none;
   cursor: pointer;
 }
+.logoSubtitle {
+  font-family: var(--font-jaymse), "Bodoni MT", serif;
+}

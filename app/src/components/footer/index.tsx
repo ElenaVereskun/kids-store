@@ -28,19 +28,19 @@ export default function Footer() {
         <div className={styles.linksFooter}>
           <div className={styles.offer}>
             <a
-              href="https://wa.me/+79032001004"
+              href="https://wa.me/+79060577065"
               className={styles.link}
               target="_blank"
             >
-              +7(903) 200-10-04
+              +7(906) 057-70-65
             </a>
             <br></br>
             <a
-              href="mailto:lena.vereskun@yandex.ru"
+              href="mailto:mikiniki-shop@yandex.ru"
               className={styles.link}
               target="_blank"
             >
-              ttttttttt@yandex.ru
+              mikiniki-shop@yandex.ru
             </a>
           </div>
 
@@ -51,10 +51,10 @@ export default function Footer() {
             >
               <Button type="small" variant="brownMedium" icon={InstagramLogo} />
             </Link>
-            <Link href="https://wa.me/+79032001004" target="_blank">
+            <Link href="https://wa.me/+79060577065" target="_blank">
               <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
             </Link>
-            <Link href="https://t.me/+79032001004" target="_blank">
+            <Link href="https://t.me/+79060577065" target="_blank">
               <Button type="small" variant="brownMedium" icon={TelegramIcon} />
             </Link>
 
@@ -70,8 +70,8 @@ export default function Footer() {
           <span>© 2024 Mikiniki</span>
           <span>ВСЕ ПРАВА ЗАЩИЩЕНЫ</span>
           <span> • ИП Татаринцева Л.А.</span>
-          <span> • ОГРНИП 321169000146781</span>
-          <span> • ИНН 164001490980</span>
+          <span> • ОГРНИП 324774600201687</span>
+          <span> • ИНН 504011454078</span>
         </div>
         <div className={styles.dev}>
           <Link href="https://t.me/+79299715582" target="_blank">

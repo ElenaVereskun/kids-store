@@ -30,19 +30,19 @@ export default function Contacts() {
               </span>
               <br></br>
               <a
-                href="https://wa.me/+79032001004"
+                href="https://wa.me/+79060577065"
                 className={styles.link}
                 target="_blank"
               >
-                +7(903) 200-10-04
+                +7(906) 057-70-65
               </a>
               <br></br>
               <a
-                href="mailto:lena.vereskun@yandex.ru"
+                href="mailto:mikiniki-shop@yandex.ru"
                 className={styles.link}
                 target="_blank"
               >
-                lena.vereskun@yandex.ru
+                mikiniki-shop@yandex.ru
               </a>
             </div>
           </div>
@@ -59,14 +59,14 @@ export default function Contacts() {
                   icon={InstagramLogo}
                 />
               </a>
-              <a href="https://wa.me/+79032001004" target="_blank">
+              <a href="https://wa.me/+79060577065" target="_blank">
                 <Button
                   type="small"
                   variant="brownMedium"
                   icon={WhatsAppIcon}
                 />
               </a>
-              <a href="https://t.me/+79032001004" target="_blank">
+              <a href="https://t.me/+79060577065" target="_blank">
                 <Button
                   type="small"
                   variant="brownMedium"

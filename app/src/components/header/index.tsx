@@ -39,7 +39,8 @@ export default function Header() {
           </Link>
         </div>
         <Link href="/">
-          <Image src={logo} alt="лого" width={150} height={150} />
+          <Image src={logo} alt="лого" width={100} height={100} />
+          {/*    <p className={styles.logoSubtitle}>Mikiniki</p> */}
         </Link>
 
         <div className={styles.links}>

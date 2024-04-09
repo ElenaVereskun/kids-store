@@ -48,6 +48,9 @@ export default function AboutUs() {
           >
             <Button type="small" variant="brownMedium" icon={InstagramLogo} />
           </Link>
+          <span style={{ marginTop: "60px" }}>
+            Здесь про красоту, про уютное детство, про любовь и заботу.
+          </span>
         </div>
 
         <div className={styles.containerPhoto}>

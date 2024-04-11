@@ -38,9 +38,9 @@ export default function Header() {
             О нас
           </Link>
         </div>
-        <Link href="/">
+        <Link href="/" className={styles.logo}>
           <Image src={logo} alt="лого" width={100} height={100} />
-          {/*    <p className={styles.logoSubtitle}>Mikiniki</p> */}
+          <p>Mikiniki</p>
         </Link>
 
         <div className={styles.links}>

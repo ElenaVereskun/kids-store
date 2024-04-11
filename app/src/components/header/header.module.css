@@ -33,6 +33,15 @@
   border: none;
   cursor: pointer;
 }
-.logoSubtitle {
-  font-family: var(--font-jaymse), "Bodoni MT", serif;
+.logo {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logo p {
+  font-family: var(--font-nanum), "Bodoni MT", serif;
+  color: var(--color-brown);
+  margin: 0;
 }

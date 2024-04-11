@@ -41,11 +41,3 @@
   color: var(--color-brown);
   text-decoration: none;
 }
-.cardList {
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  width: 1200px;
-  justify-items: center;
-  margin-top: 20px;
-  row-gap: 30px;
-}

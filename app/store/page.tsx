@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
-import Image from "next/image";
-import styles from "./store.module.css";
 import React from "react";
 import CardPhoto from "../../public/images/cardPhoto.jpg";
 import ICard from "../types/ICard";
+import CardList from "../src/components/CardList/cardLIst";
+
+import styles from "./store.module.css";
 
 export default function Store() {
   const [isOpenDrop, setIsOpenDrop] = React.useState(false);
@@ -55,48 +56,7 @@ export default function Store() {
         <Link href="#">Аксессуары</Link>
         <Link href="#">Игрушки</Link>
       </div>
-      <div className={styles.cardList}>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-        <div className={styles.card}>
-          <Image src={CardPhoto} alt="photo" width={270} height={270} />
-          <h2>{items.title}</h2>
-          <p>{items.price} руб</p>
-        </div>
-      </div>
+      <CardList />
     </section>
   );
 }

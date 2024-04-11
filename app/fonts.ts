@@ -15,13 +15,13 @@ export const helvetica = localFont({
   variable: "--font-helvetica",
 });
 
-export const jaymse = localFont({
+export const nanum = localFont({
   src: [
     {
-      path: "./public/fonts/jaymse1.ttf",
+      path: "./public/fonts/nanum.ttf",
       weight: "normal",
       style: "normal",
     },
   ],
-  variable: "--font-jaymse",
+  variable: "--font-nanum",
 });

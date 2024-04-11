@@ -5,10 +5,10 @@ import "swiper/css";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
 
-import photo1 from "../../../../public/images/fhoto.jpg";
-import photo2 from "../../../../public/images/photo2.jpeg";
-import photo3 from "../../../../public/images/photo3.jpeg";
-import photo4 from "../../../../public/images/photo4.jpeg";
+import photo1 from "../../../../public/images/priroda.jpg";
+import photo2 from "../../../../public/images/priroda2.jpeg";
+import photo3 from "../../../../public/images/priroda3.jpg";
+import photo4 from "../../../../public/images/photo2.jpeg";
 
 import styles from "./photoSwiper.module.css";
 
@@ -65,7 +65,7 @@ export default function PhotoSwiper() {
               <Image
                 src={item.imagePhoto}
                 alt="фото"
-                width={600}
+                width={1160}
                 height={700}
               />
 

@@ -3,7 +3,8 @@
   max-width: 1280px;
   justify-content: space-between;
   color: var(--color-brown);
-  padding: 60px 40px;
+  padding: 40px 60px;
+  column-gap: 30px;
 }
 .icons {
   display: flex;

@@ -2,6 +2,7 @@ import Image from "next/image";
 import photo from "../../public/images/cardPhoto.jpg";
 import ICard from "../types/ICard";
 import styles from "./styles.module.css";
+import Button from "../src/ui/Button";
 
 export default function Order() {
   const dataOrder: ICard = {
@@ -36,6 +37,7 @@ export default function Order() {
           <p>2000 руб</p>
         </div>
       </div>
+      <Button type="big" variant="brown" text="Заказать" />
     </>
   );
 }

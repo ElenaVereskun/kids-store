@@ -1,6 +1,8 @@
+import styles from "./styles.module.css";
+
 export default function Buy() {
   return (
-    <div>
+    <div className={styles.buy}>
       <h2>Доставка</h2>
       <h3>МЫ ОТПРАВЛЯЕМ НАШИ ИЗДЕЛИЯ ПО РОССИИ И ВСЕМУ МИРУ</h3>
       <ul>По территории Российской Федерации:</ul>

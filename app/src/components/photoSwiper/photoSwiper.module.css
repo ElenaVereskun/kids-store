@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: var(--max-width);
+  /* max-width: 1280px; */
   margin: auto 0;
   align-items: center;
 }
@@ -10,30 +10,30 @@
 .swiperSlide {
   min-height: 576px;
 }
-
+/* 
 .container {
   display: flex;
   gap: 25px;
   padding: 74px 77px;
   width: 100%;
 
-  background-color: var(--color-white);
   border-radius: 20px;
-}
+} */
 
 .slider_container {
+  display: flex;
   max-width: 100%;
 }
 
 .slider_container :global .swiper-pagination-bullets {
   display: flex;
   justify-content: center;
+  width: 1280px;
   column-gap: 11px;
-  margin: 44px 0 0 0;
+  margin: 20px 0 20px 0;
 }
-
 .custom_swiper_pagination_bullet {
-  display: block;
+  /* display: block; */
   width: 19px;
   height: 19px;
   border-radius: 50%;
@@ -48,4 +48,7 @@
 
 .custom_swiper_pagination_bullet:active {
   background-color: var(--color-bullets-active);
+}
+.swiper-pagination{
+ /* width: 100wh; */
 }

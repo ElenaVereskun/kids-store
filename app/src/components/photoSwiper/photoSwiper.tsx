@@ -17,24 +17,34 @@ export default function PhotoSwiper() {
     slidesPerView: 1,
     slidesPerGroup: 1,
     createElements: true,
+    followFinger:true,//it will not move while you hold your finger on it
     speed: 1000,
     loop: false,
+   /*  mousewheel: { // Позволяет перемещаться по слайдам с помощью колесика мыши.
+      invert: true,
+    }, */
     modules: [Pagination],
     pagination: {
       bulletActiveClass: styles.custom_swiper_pagination_bullet_active,
       bulletClass: styles.custom_swiper_pagination_bullet,
       clickable: true,
-      dynamicBullets: true,
-      dynamicMainBullets: 4,
+      /* dynamicBullets: true, */
+     /*  dynamicMainBullets: 4, */
     },
-    breakpoints: {
+   /*  breakpoints: {
       383: {
-        slidesPerView: 1,
+        slidesPerView:'auto',
       },
       800: {
-        slidesPerView: 1,
+        slidesPerView: 'auto',
       },
-    },
+      1000: {
+        slidesPerView: 'auto',
+      },
+      1280: {
+        slidesPerView: 'auto',
+      },
+    }, */
   };
 
   const simpleData = [
@@ -65,11 +75,11 @@ export default function PhotoSwiper() {
               <Image
                 src={item.imagePhoto}
                 alt="фото"
-                width={1160}
+                width={1280}
                 height={700}
               />
 
-              <div className="swiper-pagination"></div>
+              {/* <div className="swiper-pagination"></div> */}
             </SwiperSlide>
           ))}
       </Swiper>

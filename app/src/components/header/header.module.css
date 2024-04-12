@@ -48,7 +48,8 @@
 }
 
 .logo p {
-  font-family: var(--font-nanum), "Bodoni MT", serif;
+  font-family:'Courier New', Courier, monospace;  
+  /* font-family: var(--font-nanum), "Bodoni MT", serif; */
   color: var(--color-brown);
   margin: 0;
 }

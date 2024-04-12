@@ -62,3 +62,8 @@ body {
   overflow-y: hidden;
   padding-right: 8px;
 }
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
+  body{
+    max-width: 1000px;
+  }
+}

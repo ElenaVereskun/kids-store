@@ -9,6 +9,7 @@
 - React + Typescript
 - Next JS
 - Material UI
+- Swiper
 - ESLint
 
 ## Ссылка

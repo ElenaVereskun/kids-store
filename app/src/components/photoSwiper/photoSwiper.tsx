@@ -77,6 +77,7 @@ export default function PhotoSwiper() {
                 alt="фото"
                 width={1280}
                 height={700}
+                className={styles.image}
               />
 
               {/* <div className="swiper-pagination"></div> */}

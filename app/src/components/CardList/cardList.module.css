@@ -6,3 +6,23 @@
   margin-top: 20px;
   row-gap: 30px;
 }
+
+.card {
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+}
+
+.card h2 {
+  padding-left: 10px;
+}
+
+.card p {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
+  .cardList {
+    width: 1000px;
+    grid-template-columns: auto auto auto;
+  }
+}

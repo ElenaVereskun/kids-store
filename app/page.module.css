@@ -5,3 +5,8 @@
   max-width: 1280px;
   align-items: center;
 }
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
+  .main {
+    max-width: 1000px;
+  }
+}

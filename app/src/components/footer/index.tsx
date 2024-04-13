@@ -19,7 +19,6 @@ export default function Footer() {
           </Link>
           <Link href="store">Магазин</Link>
           <Link href="about-us">О нас</Link>
-          <Link href="lookbook">Lookbook</Link>
           <Link href="buy">ОБМЕН И ВОЗВРАТ</Link>
           <Link href="buy">ОПЛАТА И ДОСТАВКА</Link>
           <Link href="contacts">Контакты</Link>
@@ -49,16 +48,16 @@ export default function Footer() {
               href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
               target="_blank"
             >
-              <Button type="small" variant="brownMedium" icon={InstagramLogo} />
+              <Button type="small" variant="noBackground" icon={InstagramLogo} />
             </Link>
             <Link href="https://wa.me/+79060577065" target="_blank">
-              <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
+              <Button type="small" variant="noBackground" icon={WhatsAppIcon} />
             </Link>
             <Link href="https://t.me/+79060577065" target="_blank">
-              <Button type="small" variant="brownMedium" icon={TelegramIcon} />
+              <Button type="small" variant="noBackground" icon={TelegramIcon} />
             </Link>
 
-            <Button type="small" variant="brownMedium" icon={PinterestIcon} />
+            <Button type="small" variant="noBackground" icon={PinterestIcon} />
           </div>
           <div className={styles.offer}>
             <Link href="public-offer">ПУБЛИЧНАЯ ОФЕРТА</Link>
@@ -84,6 +83,12 @@ export default function Footer() {
             />
           </Link>
         </div>
+      </nav>
+      <nav className={styles.containerMobile}>
+       {/*  <Link href="/">
+          <Image src={logo} alt="лого" width={80} height={80} />
+        </Link> */}
+
       </nav>
     </footer>
   );

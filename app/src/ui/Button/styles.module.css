@@ -43,6 +43,10 @@
   background-color: var(--color-brown-wine);
 }
 
+.noBackground {
+  background: none;
+}
+
 .brown:active {
   outline: none;
   opacity: 0.8;

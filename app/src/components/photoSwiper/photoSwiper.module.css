@@ -58,10 +58,27 @@
     width: 16px;
     height: 16px;
   }
+
   .swiper-slide {
     max-width: 1000px;
   }
-  .swiper-slide-active{
+
+  .swiper-slide-active {
     max-width: 1000px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .image {
+    width: 798px;
+    height: 400px;
+  }
+
+  .swiper-slide {
+    max-width: 798px;
+  }
+
+  .swiper-slide-active {
+    max-width: 798px;
   }
 }

@@ -82,3 +82,22 @@
     max-width: 798px;
   }
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .image {
+    width: 320px;
+    height: 200px;
+  }
+
+  .swiper-slide {
+    max-width: 320px;
+  }
+
+  .swiper-slide-active {
+    max-width: 320px;
+  }
+  .custom_swiper_pagination_bullet {
+    width: 10px;
+    height: 10px;
+  }
+}

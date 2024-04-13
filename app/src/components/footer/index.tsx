@@ -15,7 +15,7 @@ export default function Footer() {
       <nav className={styles.container}>
         <div className={styles.links}>
           <Link href="/">
-            <Image src={logo} alt="лого" width={80} height={80} />
+            <Image src={logo} alt="лого" width={50} height={50} />
           </Link>
           <Link href="store">Магазин</Link>
           <Link href="about-us">О нас</Link>
@@ -42,22 +42,20 @@ export default function Footer() {
               mikiniki-shop@yandex.ru
             </a>
           </div>
-
           <div className={styles.icons}>
             <Link
               href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
               target="_blank"
             >
-              <Button type="small" variant="noBackground" icon={InstagramLogo} />
+              <Image src={InstagramLogo} width={20} height={20} alt="инстаграм" />
             </Link>
             <Link href="https://wa.me/+79060577065" target="_blank">
-              <Button type="small" variant="noBackground" icon={WhatsAppIcon} />
+              <Image src={WhatsAppIcon} width={20} height={20} alt="вотсапп" />
             </Link>
             <Link href="https://t.me/+79060577065" target="_blank">
-              <Button type="small" variant="noBackground" icon={TelegramIcon} />
+              <Image src={TelegramIcon} width={20} height={20} alt="телеграм" />
             </Link>
-
-            <Button type="small" variant="noBackground" icon={PinterestIcon} />
+            <Image src={PinterestIcon} width={20} height={20} alt="пинтерест" />
           </div>
           <div className={styles.offer}>
             <Link href="public-offer">ПУБЛИЧНАЯ ОФЕРТА</Link>
@@ -83,12 +81,6 @@ export default function Footer() {
             />
           </Link>
         </div>
-      </nav>
-      <nav className={styles.containerMobile}>
-       {/*  <Link href="/">
-          <Image src={logo} alt="лого" width={80} height={80} />
-        </Link> */}
-
       </nav>
     </footer>
   );

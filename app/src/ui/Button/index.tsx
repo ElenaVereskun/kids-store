@@ -59,8 +59,8 @@ const Button = (props: TButton) => {
           className={styles.icon}
           src={icon}
           alt={`кнопка ${text}`}
-          width={24}
-          height={24}
+          /* width={24}
+          height={24} */
         />
       )}
     </button>

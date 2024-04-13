@@ -18,9 +18,9 @@ const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
 
     return (
       <div className={styles.cart} ref={ref}>
-        <Link href="/order" onMouseEnter={handleShowPopup}>
+        <button onMouseEnter={handleShowPopup} style={{ border: "none", background: 'none' }}>
           <Image src={basket} alt="поиск" width={25} height={25} />
-        </Link>
+        </button>
         <AnimatePresence>
           {isOpen && (
             <motion.div
@@ -34,6 +34,7 @@ const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
                 <span />
                 <div className={styles.cartTop}>
                   <h3>Корзина</h3>
+
                   <button
                     onClick={handleHidePopup}
                     className={styles.cartButtonClose}
@@ -50,13 +51,14 @@ const CartPopup = forwardRef<HTMLDivElement, IWrappedComponentProps>(
                     <span>Сумма заказа:</span>
                     <span>0 ₽</span>
                   </div>
-                  <Link href="/order">
+                  <Link href='/order' onClick={handleHidePopup}>
                     <Button
                       variant="brown"
                       type="big"
                       text="Оформить заказ"
                     ></Button>
                   </Link>
+
                 </div>
               </div>
             </motion.div>

@@ -46,7 +46,7 @@ export default function AboutUs() {
             href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
             target="_blank"
           >
-            <Button type="small" variant="brownMedium" icon={InstagramLogo} />
+            <Button type="small" variant="noBackground" icon={InstagramLogo} />
           </Link>
           <span style={{ marginTop: "60px" }}>
             Здесь про красоту, про уютное детство, про любовь и заботу.

@@ -7,24 +7,27 @@
   justify-content: flex-start;
   flex-direction: column;
 }
+
 .links {
   display: flex;
   justify-content: space-between;
 }
+
 .links a {
   color: var(--color-brown);
   text-decoration: none;
   text-transform: uppercase;
   align-items: center;
   display: flex;
-  padding-bottom: 15px;
   margin: 0;
 }
+
 .links a:active {
   text-decoration: underline;
   cursor: pointer;
   opacity: 0.8;
 }
+
 .offer a {
   color: var(--color-brown);
   text-decoration: none;
@@ -32,34 +35,149 @@
   align-items: center;
   display: flex;
   margin: 0;
-  font-size: 12px;
+  font-size: 10px;
 }
+
 .linksFooter {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 0px 30px 0px;
+  padding: 10px 0px;
   align-items: center;
-  column-gap: 20px;
+  gap: 20px;
 }
+
 .icons {
   display: flex;
   column-gap: 20px;
 }
+
 .prava {
   display: flex;
   color: var(--color-brown);
   font-size: 12px;
   justify-content: center;
   gap: 20px;
+  font-size: 10px;
 }
+
 .dev {
   display: flex;
   justify-content: center;
   margin-top: 20px;
 }
+
 .dev a {
   color: var(--color-brown);
   text-decoration: none;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+
+
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
+  .container {
+    max-width: 1000px;
+  }
+
+  .linksFooter {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .dev {
+    margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+
+  .container {
+    max-width: 768px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 20px 20px 10px 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .links a {
+    font-size: 8px;
+    padding-bottom: 0px;
+  }
+
+  .links a:first-child {
+    display: none;
+  }
+
+  .linksFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-bottom: 0px;
+  }
+
+  .prava {
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 8px;
+  }
+
+  .dev {
+    display: none;
+  }
+
+  .offer a {
+    font-size: 8px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .container {
+    max-width: 768px;
+    justify-content: center;
+    padding: 20px 20px 10px 20px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .links a {
+    font-size: 8px;
+    padding-bottom: 5px;
+  }
+
+  .links a:first-child {
+    display: none;
+  }
+
+  .linksFooter {
+    display: none;
+  }
+
+  .prava span:first-child {
+    display: flex;
+  }
+
+  .prava span {
+    display: none;
+  }
+
+  .dev {
+    display: flex;
+    margin-top: 0px;
+  }
 }

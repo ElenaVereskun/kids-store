@@ -4,13 +4,18 @@ import Image from "next/image";
 import React from "react";
 
 import logo from "../../../../public/images/logo.png";
+import home from "../../../../public/images/home.svg";
 import search from "../../../../public/images/search.svg";
+import likes from '../../../../public/images/like.svg';
+import account from '../../../../public/images/account-uncheck.svg';
+import basket from '../../../../public/images/baske.svg';
 
 import { openSearchModal } from "../../../context/modals";
 import { addOverflowHiddenFromBody } from "../../../lib/utils/commons";
 
 import styles from "./header.module.css";
 import CartPopup from "../CartPopup/CartPopup";
+import Button from "../../ui/Button";
 
 export default function Header() {
   const handleOpenSearchModal = () => {
@@ -19,11 +24,11 @@ export default function Header() {
   };
 
   return (
-    <header>
+    <header className={styles.header}>
       <nav className={styles.container}>
         <div className={styles.links}>
           <button
-            className={styles.buttonSearch}
+            className={styles.button}
             onClick={handleOpenSearchModal}
           >
             <Image src={search} alt="поиск" width={25} height={25} />
@@ -39,7 +44,7 @@ export default function Header() {
           </Link>
         </div>
         <Link href="/" className={styles.logo}>
-          <Image src={logo} alt="лого" width={100} height={100} />
+          <Image src={logo} alt="лого" width={80} height={80} />
           <p>Mikiniki</p>
         </Link>
 
@@ -55,6 +60,15 @@ export default function Header() {
           </Link>
           <CartPopup />
         </div>
+      </nav>
+      <nav className={styles.buttonMenu}>
+        <Link href='/'>
+          <Button type="small" variant="noBackground" icon={home} />
+        </Link>
+        <Button type="small" variant="noBackground" icon={search} />
+        <Button type="small" variant="noBackground" icon={account} />
+        <Button type="small" variant="noBackground" icon={likes} />
+        <CartPopup />
       </nav>
     </header>
   );

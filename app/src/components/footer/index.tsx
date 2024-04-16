@@ -15,11 +15,10 @@ export default function Footer() {
       <nav className={styles.container}>
         <div className={styles.links}>
           <Link href="/">
-            <Image src={logo} alt="лого" width={100} height={100} />
+            <Image src={logo} alt="лого" width={50} height={50} />
           </Link>
           <Link href="store">Магазин</Link>
           <Link href="about-us">О нас</Link>
-          <Link href="lookbook">Lookbook</Link>
           <Link href="buy">ОБМЕН И ВОЗВРАТ</Link>
           <Link href="buy">ОПЛАТА И ДОСТАВКА</Link>
           <Link href="contacts">Контакты</Link>
@@ -43,22 +42,20 @@ export default function Footer() {
               mikiniki-shop@yandex.ru
             </a>
           </div>
-
           <div className={styles.icons}>
             <Link
               href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
               target="_blank"
             >
-              <Button type="small" variant="brownMedium" icon={InstagramLogo} />
+              <Image src={InstagramLogo} width={20} height={20} alt="инстаграм" />
             </Link>
             <Link href="https://wa.me/+79060577065" target="_blank">
-              <Button type="small" variant="brownMedium" icon={WhatsAppIcon} />
+              <Image src={WhatsAppIcon} width={20} height={20} alt="вотсапп" />
             </Link>
             <Link href="https://t.me/+79060577065" target="_blank">
-              <Button type="small" variant="brownMedium" icon={TelegramIcon} />
+              <Image src={TelegramIcon} width={20} height={20} alt="телеграм" />
             </Link>
-
-            <Button type="small" variant="brownMedium" icon={PinterestIcon} />
+            <Image src={PinterestIcon} width={20} height={20} alt="пинтерест" />
           </div>
           <div className={styles.offer}>
             <Link href="public-offer">ПУБЛИЧНАЯ ОФЕРТА</Link>

@@ -55,28 +55,28 @@ export default function Contacts() {
               >
                 <Button
                   type="small"
-                  variant="brownMedium"
+                  variant="noBackground"
                   icon={InstagramLogo}
                 />
               </a>
               <a href="https://wa.me/+79060577065" target="_blank">
                 <Button
                   type="small"
-                  variant="brownMedium"
+                  variant="noBackground"
                   icon={WhatsAppIcon}
                 />
               </a>
               <a href="https://t.me/+79060577065" target="_blank">
                 <Button
                   type="small"
-                  variant="brownMedium"
+                  variant="noBackground"
                   icon={TelegramIcon}
                 />
               </a>
               <a href="#">
                 <Button
                   type="small"
-                  variant="brownMedium"
+                  variant="noBackground"
                   icon={PinterestIcon}
                 />
               </a>

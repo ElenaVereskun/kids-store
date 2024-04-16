@@ -5,7 +5,7 @@ import Image from "next/image";
 export type TButton = {
   text?: string;
   type: "small" | "big";
-  variant: "brown" | "brownMedium";
+  variant: "brown" | "noBackground";
   borderRadius?: string;
   padding?: string;
   width?: string;
@@ -33,7 +33,7 @@ const Button = (props: TButton) => {
 
   const buttonVariant = {
     brown: styles.brown,
-    brownMedium: styles.brownMedium,
+    noBackground: styles.noBackground,
   };
   const typeButton = {
     small: styles.buttonSmall,
@@ -59,8 +59,8 @@ const Button = (props: TButton) => {
           className={styles.icon}
           src={icon}
           alt={`кнопка ${text}`}
-          width={24}
-          height={24}
+          /* width={24}
+          height={24} */
         />
       )}
     </button>

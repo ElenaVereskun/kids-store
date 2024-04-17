@@ -11,7 +11,7 @@ import styles from "./footer.module.css";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className={styles.footer}>
       <nav className={styles.container}>
         <div className={styles.links}>
           <Link href="/">
@@ -47,7 +47,12 @@ export default function Footer() {
               href="https://www.instagram.com/mikiniki_shop?igsh=MTNwOThhdmhjMHQxYg=="
               target="_blank"
             >
-              <Image src={InstagramLogo} width={20} height={20} alt="инстаграм" />
+              <Image
+                src={InstagramLogo}
+                width={20}
+                height={20}
+                alt="инстаграм"
+              />
             </Link>
             <Link href="https://wa.me/+79060577065" target="_blank">
               <Image src={WhatsAppIcon} width={20} height={20} alt="вотсапп" />

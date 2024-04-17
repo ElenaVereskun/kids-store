@@ -6,9 +6,9 @@ import React from "react";
 import logo from "../../../../public/images/logo.png";
 import home from "../../../../public/images/home.svg";
 import search from "../../../../public/images/search.svg";
-import likes from '../../../../public/images/like.svg';
-import account from '../../../../public/images/account-uncheck.svg';
-import basket from '../../../../public/images/baske.svg';
+import likes from "../../../../public/images/like.svg";
+import account from "../../../../public/images/account-uncheck.svg";
+import burger from "../../../../public/images/burger.svg";
 
 import { openSearchModal } from "../../../context/modals";
 import { addOverflowHiddenFromBody } from "../../../lib/utils/commons";
@@ -27,10 +27,7 @@ export default function Header() {
     <header className={styles.header}>
       <nav className={styles.container}>
         <div className={styles.links}>
-          <button
-            className={styles.button}
-            onClick={handleOpenSearchModal}
-          >
+          <button className={styles.button} onClick={handleOpenSearchModal}>
             <Image src={search} alt="поиск" width={25} height={25} />
           </button>
           <Link href="/" className={styles.link}>
@@ -62,7 +59,8 @@ export default function Header() {
         </div>
       </nav>
       <nav className={styles.buttonMenu}>
-        <Link href='/'>
+        <Button type="small" variant="noBackground" icon={burger} />
+        <Link href="/">
           <Button type="small" variant="noBackground" icon={home} />
         </Link>
         <Button type="small" variant="noBackground" icon={search} />

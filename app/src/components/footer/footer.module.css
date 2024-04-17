@@ -1,6 +1,8 @@
+.footer {
+  margin: 0 auto;
+}
 .container {
   max-width: 1280px;
-  margin: 0 auto;
   padding: 60px 40px 10px 40px;
   display: flex;
   column-gap: 60px;
@@ -73,8 +75,6 @@
   font-size: 10px;
 }
 
-
-
 @media screen and (min-width: 1000px) and (max-width: 1279px) {
   .container {
     max-width: 1000px;
@@ -90,50 +90,22 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 999px) {
-
   .container {
     max-width: 768px;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 20px 10px 20px;
   }
-
-  .links {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-
-  }
-
-  .links a {
-    font-size: 8px;
-    padding-bottom: 0px;
-  }
-
-  .links a:first-child {
-    display: none;
-  }
-
-  .linksFooter {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-bottom: 0px;
-  }
-
   .prava {
-    flex-direction: column;
-    justify-content: space-between;
-    font-size: 8px;
+    gap: 5px;
   }
-
-  .dev {
+  .links a {
+    font-size: 12px;
+    padding-bottom: 0px;
+  }
+  .linksFooter {
     display: none;
+    padding-top: 0px;
   }
-
-  .offer a {
-    font-size: 8px;
+  .dev {
+    margin-top: 5px;
   }
 }
 

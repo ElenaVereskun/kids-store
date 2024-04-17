@@ -1,8 +1,6 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import CardPhoto from "../../public/images/cardPhoto.jpg";
-import ICard from "../types/ICard";
 import CardList from "../src/components/CardList/cardLIst";
 
 import styles from "./store.module.css";
@@ -18,11 +16,6 @@ export default function Store() {
     setIsOpenDrop(false);
   };
 
-  const items: ICard = {
-    photo: CardPhoto,
-    title: "Название",
-    price: 100500,
-  };
   return (
     <section className={styles.section}>
       <div className={styles.topStore}>

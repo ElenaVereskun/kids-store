@@ -1,6 +1,6 @@
 export default function publicOffer() {
   return (
-    <div>
+    <div style={{ marginLeft: "20px", marginRight: "20px" }}>
       <h2>
         ДОГОВОР ПУБЛИЧНОЙ ОФЕРТЫ О ПРОДАЖЕ ТОВАРОВ ИНТЕРНЕТ-МАГАЗИНА MIKINIKI
       </h2>

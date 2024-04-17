@@ -1,6 +1,6 @@
 export default function privacyPolicy() {
   return (
-    <div>
+    <div style={{ marginLeft: "20px", marginRight: "20px" }}>
       <h2>ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ</h2>
       <p>
         Настоящая Политика конфиденциальности персональных данных (далее –

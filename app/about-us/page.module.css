@@ -18,10 +18,12 @@
   border-radius: 20px;
   margin-right: 20px;
   object-fit: cover;
+  float: left;
 }
 .info {
   display: flex;
-  width: 450px;
+  flex-direction: column;
+  gap: 20px;
 }
 .insta {
   display: flex;
@@ -46,4 +48,78 @@
   flex-direction: column;
   align-items: center;
   padding-left: 20px;
+}
+@media screen and (min-width: 1000px) and (max-width: 1279px) {
+  .section {
+    max-width: 1000px;
+  }
+  .containerPhoto img {
+    height: 250px;
+    width: 250px;
+  }
+  .insta {
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .section {
+    max-width: 768px;
+  }
+  .containerPhoto img {
+    height: 200px;
+    width: 200px;
+  }
+  .imagePhoto {
+    padding-top: 20px;
+  }
+  .image {
+    height: 200px;
+    width: 150px;
+  }
+  .insta {
+    gap: 20px;
+  }
+  .containerText h3 {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .section {
+    max-width: 320px;
+  }
+  .image {
+    margin-right: 0px;
+    float: none;
+    margin-bottom: 20px;
+  }
+  .imagePhoto {
+    padding-top: 20px;
+  }
+
+  .insta {
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .containerPhoto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .containerPhoto img {
+    width: 180px;
+    height: 180px;
+  }
+  .containerText {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .containerText h3 {
+    font-size: 12px;
+    margin: 0;
+  }
+  .containerText h2 {
+    margin: 0;
+  }
 }

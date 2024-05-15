@@ -5,10 +5,10 @@ import "swiper/css";
 import Image from "next/image";
 import { Pagination } from "swiper/modules";
 
-import photo1 from "../../../../public/images/priroda.jpg";
-import photo2 from "../../../../public/images/priroda2.jpeg";
-import photo3 from "../../../../public/images/priroda3.jpg";
-import photo4 from "../../../../public/images/photo2.jpeg";
+import photo1 from "../../../../public/images/photoMain.jpg";
+import photo2 from "../../../../public/images/photoMain1.jpg";
+import photo3 from "../../../../public/images/photoMain2.jpg";
+import photo4 from "../../../../public/images/photoMain3.jpg";
 
 import styles from "./photoSwiper.module.css";
 
@@ -17,10 +17,10 @@ export default function PhotoSwiper() {
     slidesPerView: 1,
     slidesPerGroup: 1,
     createElements: true,
-    followFinger:true,//it will not move while you hold your finger on it
+    followFinger: true, //it will not move while you hold your finger on it
     speed: 1000,
     loop: false,
-   /*  mousewheel: { // Позволяет перемещаться по слайдам с помощью колесика мыши.
+    /*  mousewheel: { // Позволяет перемещаться по слайдам с помощью колесика мыши.
       invert: true,
     }, */
     modules: [Pagination],
@@ -29,9 +29,9 @@ export default function PhotoSwiper() {
       bulletClass: styles.custom_swiper_pagination_bullet,
       clickable: true,
       /* dynamicBullets: true, */
-     /*  dynamicMainBullets: 4, */
+      /*  dynamicMainBullets: 4, */
     },
-   /*  breakpoints: {
+    /*  breakpoints: {
       383: {
         slidesPerView:'auto',
       },

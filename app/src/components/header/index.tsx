@@ -33,7 +33,7 @@ export default function Header() {
           <Link href="/" className={styles.link}>
             Главная
           </Link>
-          <Link href="store" className={styles.link}>
+          <Link href="shop" className={styles.link}>
             Магазин
           </Link>
           <Link href="about-us" className={styles.link}>

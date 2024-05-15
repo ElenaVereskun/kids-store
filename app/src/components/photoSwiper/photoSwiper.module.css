@@ -6,7 +6,9 @@
   margin: auto 0;
   align-items: center;
 }
-
+.image {
+  object-fit: cover;
+}
 /* 
 .container {
   display: flex;

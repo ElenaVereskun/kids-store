@@ -17,7 +17,7 @@ export default function Footer() {
           <Link href="/">
             <Image src={logo} alt="лого" width={50} height={50} />
           </Link>
-          <Link href="store">Магазин</Link>
+          <Link href="shop">Магазин</Link>
           <Link href="about-us">О нас</Link>
           <Link href="buy">ОБМЕН И ВОЗВРАТ</Link>
           <Link href="buy">ОПЛАТА И ДОСТАВКА</Link>

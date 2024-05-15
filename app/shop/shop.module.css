@@ -41,6 +41,19 @@
   color: var(--color-brown);
   text-decoration: none;
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1280px) {
+  .topStore {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 999px) {
+  .topStore {
+    display: none;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .topStore {
     display: none;

@@ -1,14 +1,14 @@
 import Image from "next/image";
-
-import styles from "./page.module.css";
-
-import AboutUsPhoto from "../../public/images/fhoto.jpg";
-import AboutUsPhoto2 from "../../public/images/photo2.jpeg";
-import AboutUsPhoto3 from "../../public/images/photo3.jpeg";
-import AboutUsPhoto4 from "../../public/images/photo4.jpeg";
-import InstagramLogo from "../../public/images/instagram.svg";
 import Link from "next/link";
 import Button from "../src/ui/Button";
+
+import AboutUsPhoto from "../../public/images/photoAboutUs.jpg";
+import AboutUsPhoto2 from "../../public/images/photoAboutUs1.jpg";
+import AboutUsPhoto3 from "../../public/images/photoAboutUs2.jpg";
+import AboutUsPhoto4 from "../../public/images/photoAboutUs3.jpg";
+import InstagramLogo from "../../public/images/instagram.svg";
+
+import styles from "./page.module.css";
 
 export default function AboutUs() {
   return (

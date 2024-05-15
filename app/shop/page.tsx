@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 import CardList from "../src/components/CardList/cardLIst";
 
-import styles from "./store.module.css";
+import styles from "./shop.module.css";
 
-export default function Store() {
+export default function Shop() {
   const [isOpenDrop, setIsOpenDrop] = React.useState(false);
 
   const toggleDrop = () => {
